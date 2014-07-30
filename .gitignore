@@ -11,6 +11,5 @@ Thumbs.db
 /public/assets/
 /storage/cache/*
 /storage/logs/*
-/storage/meta/*
 /storage/sessions/*
 /storage/views/*
