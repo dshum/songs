@@ -9,4 +9,8 @@ Thumbs.db
 /app/config/database.php
 /public/LT/
 /public/assets/
-/storage/
+/storage/cache/*
+/storage/logs/*
+/storage/meta/*
+/storage/sessions/*
+/storage/views/*
