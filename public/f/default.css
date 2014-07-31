@@ -1,0 +1,41 @@
+html, body {height: 100%; padding: 0; margin: 0;}
+body {background-color: #FFF; color: #000; font: 12px trebuchet ms; padding: 20px 50px; height: auto;}
+
+h1 {display: inline-block; background-color: #789; color: #FFF; font-size: 24px; padding: 5px 20px 5px 20px;}
+h2 {display: inline-block; background-color: #ABC; color: #FFF; font-size: 21px; padding: 3px 15px 3px 15px;}
+h3 {display: inline-block; background-color: #ABC; color: #FFF; font-size: 18px; padding: 3px 15px 3px 15px;}
+
+h1 a {color: #FFF;}
+h2 a {color: #FFF;}
+h3 a {color: #FFF;}
+
+table {font-size: 100%; border-collapse: collapse;}
+p {margin: 0.5em 0 0.8em 0;}
+img {border: none;}
+a {color: #005aa8; text-decoration: underline;}
+input {width: 100px; color: #999;}
+
+.errors {background: #e74a00; padding: 10px 10px 5px 10px; color: #FFF; font-weight: bold; margin-left: -10px; margin-bottom: 10px;}
+.errors p {margin: 0 0 5px 0;}
+.errors a {color: #FFF;}
+
+div.blue {float: left; font-size: 17px; padding-left: 20px;}
+div.blue div {width: 100px; height: 100px; margin: 10px; float: left; background: url(/i/blue.png) no-repeat; color: #FFF; text-align: center; line-height: 100px;}
+
+div.category-row {margin: 10px;}
+div.category-row div.category {width: 150px; height: 200px; float: left; font-size: 19px; text-align: left; padding-right: 20px; line-height: 120px;}
+div.category-row div.category span {padding: 2px 10px 2px 10px; background-color: #675; color: #FFF;}
+div.category-row div.card {width: 110px; margin-left: 10px; float: left; padding: 5px; font-size: 15px; text-align: center; background-color: #F7F9F7; border-top: 2px solid #EEE; border-left: 2px solid #EEE; border-right: 4px solid #DDD; border-bottom: 4px solid #DDD; border-radius: 10px;}
+div.mark {margin: 5px; width: 100px; height: 100px; color: #FFF; font-size: 17px; text-align: center; line-height: 100px;}
+div.card a {text-decoration: none;}
+div.empty {background: url(/i/empty.png) no-repeat; color: #000;}
+div.yellow {background: url(/i/yellow.png) no-repeat;}
+div.red {background: url(/i/red.png) no-repeat;}
+
+div.date {margin-top: 5px;}
+div.date span.empty {background-color: #D4D4D4; font-size: 13px; padding: 0 5px 0 5px; border-radius: 2px;}
+div.date span.yellow {background-color: #F0C80D; color: #FFF; font-size: 13px; padding: 0 5px 0 5px; border-radius: 2px;}
+
+p.archive {font-size: 32px; color: #35F;}
+
+div.footer {width: 50%; border-top: 2px solid #CCC; padding: 10px;}

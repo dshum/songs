@@ -13,9 +13,9 @@
 
 Route::get('/', array('as' => 'home', 'uses' => 'HomeController@getIndex'));
 
-Route::get('/artists', array('as' => 'artists', 'uses' => 'HomeController@getArtists'));
-Route::get('/albums', array('as' => 'albums', 'uses' => 'HomeController@getAlbums'));
-Route::get('/songs', array('as' => 'songs', 'uses' => 'HomeController@getSongs'));
+Route::get('/artists', array('as' => 'artists', 'uses' => 'HomeController@getIndex'));
+Route::get('/albums', array('as' => 'albums', 'uses' => 'HomeController@getIndex'));
+Route::get('/songs', array('as' => 'songs', 'uses' => 'HomeController@getIndex'));
 
 Route::get('/artists/{id}', array('as' => 'artist', 'uses' => 'HomeController@getArtist'));
 Route::get('/albums/{id}', array('as' => 'album', 'uses' => 'HomeController@getAlbum'));
