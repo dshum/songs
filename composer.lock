@@ -453,12 +453,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/dshum/LemonTree.git",
-                "reference": "e68c314cab704172c31bf85458c101d9cf8a3a14"
+                "reference": "b739b1b305b4a62328668429b27f15fc2a24ea59"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dshum/LemonTree/zipball/e68c314cab704172c31bf85458c101d9cf8a3a14",
-                "reference": "e68c314cab704172c31bf85458c101d9cf8a3a14",
+                "url": "https://api.github.com/repos/dshum/LemonTree/zipball/b739b1b305b4a62328668429b27f15fc2a24ea59",
+                "reference": "b739b1b305b4a62328668429b27f15fc2a24ea59",
                 "shasum": ""
             },
             "require": {
@@ -486,7 +486,7 @@
                     "email": "denis-shumeev@yandex.ru"
                 }
             ],
-            "time": "2014-07-30 17:08:08"
+            "time": "2014-08-03 09:52:46"
         },
         {
             "name": "monolog/monolog",
@@ -797,16 +797,16 @@
         },
         {
             "name": "predis/predis",
-            "version": "v0.8.6",
+            "version": "v0.8.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nrk/predis.git",
-                "reference": "239864d9a0929f29bf8c5a8370ef743537c4953d"
+                "reference": "4123fcd85d61354c6c9900db76c9597dbd129bf6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nrk/predis/zipball/239864d9a0929f29bf8c5a8370ef743537c4953d",
-                "reference": "239864d9a0929f29bf8c5a8370ef743537c4953d",
+                "url": "https://api.github.com/repos/nrk/predis/zipball/4123fcd85d61354c6c9900db76c9597dbd129bf6",
+                "reference": "4123fcd85d61354c6c9900db76c9597dbd129bf6",
                 "shasum": ""
             },
             "require": {
@@ -843,7 +843,7 @@
                 "predis",
                 "redis"
             ],
-            "time": "2014-07-15 09:54:33"
+            "time": "2014-08-01 09:43:10"
         },
         {
             "name": "psr/log",

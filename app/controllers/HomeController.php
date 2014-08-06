@@ -20,8 +20,8 @@ class HomeController extends BaseController {
 
 		try {
 			$currentSong = Song::find($id);
-			$currentAlbum = Album::find($currentSong->album_id);
-			$currentArtist = Artist::find($currentAlbum->artist_id);
+			$currentAlbum = $currentSong->album;
+			$currentArtist = $currentAlbum->artist;
 		} catch (Exception $e) {
 			return Redirect::route('home');
 		}
@@ -39,7 +39,7 @@ class HomeController extends BaseController {
 
 		try {
 			$currentAlbum = Album::find($id);
-			$currentArtist = $currentAlbum->artist->first();
+			$currentArtist = $currentAlbum->artist;
 		} catch (Exception $e) {
 			return Redirect::route('home');
 		}

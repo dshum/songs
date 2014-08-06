@@ -1,9 +1,9 @@
 @extends('error')
 
-@section('title', 'Flutta | 505')
+@section('title', 'Songs | 505')
 
 @section('content')
-<h1><a href="{{ URL::route('home') }}">Flutta</a></h1> <h2>505</h2>
+<h1><a href="{{ URL::route('home') }}">Songs</a></h1> <h2>505</h2>
 <p>На сайте ведутся технические работы. Обновите страницу, пожалуйста. Если это не поможет, зайдите на сайт через 15 минут.</p>
 <p>Приносим извинения за возможные неудобства.</p>
 @stop

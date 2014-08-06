@@ -13,6 +13,7 @@ $(function() {
 </script>
 <body class="site" id="fp">
 @yield('content')
+<div class="footer">
 {? $site = App::make('site') ?}
 {? $queries = DB::getQueryLog() ?}
 <ol>
@@ -21,7 +22,6 @@ $(function() {
 @endforeach
 </ol>
 <p>Totally: {{ $site->getMicroTime() }} sec, {{ $site->getMemoryUsage() }} Mb</p>
-<div class="footer">
 </div>
 </body>
 </html>
