@@ -13,6 +13,38 @@ class HomeController extends BaseController {
 	{
 		return Redirect::back();
 	}
+	
+	public function getAdd()
+	{
+		$scope = array();
+		
+		
+
+		return View::make('add', $scope);
+	}
+	
+	public function getSearch()
+	{
+		$scope = array();
+		
+		$q = Input::get('q');
+
+		$songList = 
+			Song::where(
+				function($query) use ($q) {
+					if ($q) {
+						$query->
+						orWhere('name', 'ilike', "%$q%")->
+						orWhere('text', 'ilike', "%$q%");
+					}
+				}
+			)->
+			orderBy('name')->get();
+
+		$scope['songList'] = $songList;
+
+		return View::make('search', $scope);
+	}
 
 	public function getSong($id)
 	{

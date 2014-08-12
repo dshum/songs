@@ -13,7 +13,10 @@ table {font-size: 100%; border-collapse: collapse;}
 p {margin: 0.5em 0 0.8em 0;}
 img {border: none;}
 a {color: #005aa8; text-decoration: underline;}
-input {width: 100px; color: #999;}
+input[type="text"] {width: 400px; font-size: 120%; color: #CCC;}
+input[type="text"].short {width: 80px; margin-left: 20px;}
+input[type="submit"] {padding: 5px 20px; font-size: 120%;}
+textarea {width: 500px; color: #CCC;}
 
 .errors {background: #e74a00; padding: 10px 10px 5px 10px; color: #FFF; font-weight: bold; margin-left: -10px; margin-bottom: 10px;}
 .errors p {margin: 0 0 5px 0;}
