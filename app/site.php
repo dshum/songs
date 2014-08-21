@@ -104,7 +104,7 @@ $site->
 			setShow(true)
 		)->
 		addProperty(
-			TextfieldProperty::create('text')->
+			TextareaProperty::create('text')->
 			setTitle('Текст')
 		)->
 		addProperty(

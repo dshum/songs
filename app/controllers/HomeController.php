@@ -13,6 +13,38 @@ class HomeController extends BaseController {
 	{
 		return Redirect::back();
 	}
+	
+	public function getAdd()
+	{
+		$scope = array();
+		
+		
+
+		return View::make('add', $scope);
+	}
+	
+	public function getSearch()
+	{
+		$scope = array();
+		
+		$q = Input::get('q');
+
+		$songList = 
+			Song::where(
+				function($query) use ($q) {
+					if ($q) {
+						$query->
+						orWhere('name', 'ilike', "%$q%")->
+						orWhere('text', 'ilike', "%$q%");
+					}
+				}
+			)->
+			orderBy('name')->get();
+
+		$scope['songList'] = $songList;
+
+		return View::make('search', $scope);
+	}
 
 	public function getSong($id)
 	{
@@ -20,8 +52,8 @@ class HomeController extends BaseController {
 
 		try {
 			$currentSong = Song::find($id);
-			$currentAlbum = Album::find($currentSong->album_id);
-			$currentArtist = Artist::find($currentAlbum->artist_id);
+			$currentAlbum = $currentSong->album;
+			$currentArtist = $currentAlbum->artist;
 		} catch (Exception $e) {
 			return Redirect::route('home');
 		}
@@ -39,7 +71,7 @@ class HomeController extends BaseController {
 
 		try {
 			$currentAlbum = Album::find($id);
-			$currentArtist = $currentAlbum->artist->first();
+			$currentArtist = $currentAlbum->artist;
 		} catch (Exception $e) {
 			return Redirect::route('home');
 		}

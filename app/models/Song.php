@@ -2,13 +2,6 @@
 
 class Song extends LemonTree\Element {
 
-	public function newQuery($excludeDeleted = true)
-	{
-		$builder = parent::newQuery();
-
-		return $builder->cacheTags('Song')->rememberForever();
-	}
-
 	public function getHref()
 	{
 		return \URL::route('song', array('id' => $this->id));

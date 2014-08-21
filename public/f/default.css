@@ -1,9 +1,9 @@
 html, body {height: 100%; padding: 0; margin: 0;}
-body {background-color: #FFF; color: #000; font: 12px trebuchet ms; padding: 20px 50px; height: auto;}
+body {background-color: #FFF; color: #000; font: 150% arial; padding: 20px 50px; height: auto;}
 
-h1 {display: inline-block; background-color: #789; color: #FFF; font-size: 24px; padding: 5px 20px 5px 20px;}
-h2 {display: inline-block; background-color: #ABC; color: #FFF; font-size: 21px; padding: 3px 15px 3px 15px;}
-h3 {display: inline-block; background-color: #ABC; color: #FFF; font-size: 18px; padding: 3px 15px 3px 15px;}
+h1 {display: inline-block; background-color: #789; color: #FFF; padding: 5px 20px 5px 20px;}
+h2 {display: inline-block; background-color: #ABC; color: #FFF; padding: 3px 15px 3px 15px;}
+h3 {display: inline-block; background-color: #ABC; color: #FFF; padding: 3px 15px 3px 15px;}
 
 h1 a {color: #FFF;}
 h2 a {color: #FFF;}
@@ -13,7 +13,10 @@ table {font-size: 100%; border-collapse: collapse;}
 p {margin: 0.5em 0 0.8em 0;}
 img {border: none;}
 a {color: #005aa8; text-decoration: underline;}
-input {width: 100px; color: #999;}
+input[type="text"] {width: 400px; font-size: 120%; color: #CCC;}
+input[type="text"].short {width: 80px; margin-left: 20px;}
+input[type="submit"] {padding: 5px 20px; font-size: 120%;}
+textarea {width: 500px; color: #CCC;}
 
 .errors {background: #e74a00; padding: 10px 10px 5px 10px; color: #FFF; font-weight: bold; margin-left: -10px; margin-bottom: 10px;}
 .errors p {margin: 0 0 5px 0;}
@@ -39,3 +42,4 @@ div.date span.yellow {background-color: #F0C80D; color: #FFF; font-size: 13px; p
 p.archive {font-size: 32px; color: #35F;}
 
 div.footer {width: 50%; border-top: 2px solid #CCC; padding: 10px;}
+div.footer {font-size: 60%;}

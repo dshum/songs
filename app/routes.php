@@ -13,6 +13,11 @@
 
 Route::get('/', array('as' => 'home', 'uses' => 'HomeController@getIndex'));
 
+Route::get('/search', array('as' => 'search', 'uses' => 'HomeController@getSearch'));
+
+Route::get('/add', array('as' => 'add', 'uses' => 'HomeController@getAdd'));
+Route::post('/add', array('as' => 'add', 'uses' => 'HomeController@postAdd'));
+
 Route::get('/artists', array('as' => 'artists', 'uses' => 'HomeController@getIndex'));
 Route::get('/albums', array('as' => 'albums', 'uses' => 'HomeController@getIndex'));
 Route::get('/songs', array('as' => 'songs', 'uses' => 'HomeController@getIndex'));
