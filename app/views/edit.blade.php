@@ -34,7 +34,7 @@ $(function() {
 </script>
 @stop
 
-@section('title', 'Новая песня')
+@section('title', $currentSong->name)
 
 @section('content')
 <h2><a href="{{ $currentArtist->getHref() }}">{{ $currentArtist->name }}</a></h2>
