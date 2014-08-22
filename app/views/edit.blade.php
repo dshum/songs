@@ -37,11 +37,12 @@ $(function() {
 @section('title', 'Новая песня')
 
 @section('content')
-<h2><span>Новая песня</span></h2>
-{{ Form::open(array('route' => 'add', 'method' => 'post')) }}
+<h2><a href="{{ $currentArtist->getHref() }}">{{ $currentArtist->name }}</a></h2>
+<h3><a href="{{ $currentSong->getHref() }}">{{ $currentSong->name }}</a></h3>
+{{ Form::open(array('route' => array('save', $currentSong->id), 'method' => 'post')) }}
 <p>{{ Form::text('artist', $artistName ? $artistName : 'Исполнитель', array('default' => 'Исполнитель', 'class' => in_array('artist', $error) ? 'red' : null, )) }}</p>
 <p>{{ Form::text('song', $songName ? $songName : 'Название', array('default' => 'Название', 'class' => in_array('song', $error) ? 'red' : null, )) }}</p>
 <p>{{ Form::textarea('text', $songText ? $songText : 'Текст', array('default' => 'Текст', 'class' => in_array('text', $error) ? 'red' : null, )) }}</p>
-<p>{{ Form::submit('Добавить') }}</p>
+<p>{{ Form::submit('Сохранить') }}</p>
 {{ Form::close() }}
 @stop

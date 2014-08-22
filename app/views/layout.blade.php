@@ -6,13 +6,17 @@
 <title>@yield('title')</title>
 <link rel="shortcut icon" href="{{ asset('favicon.ico') }}" type="image/x-icon">
 {{ HTML::style('f/default.css') }}
+{{ HTML::style('f/jquery/jquery-ui-1.10.4.custom.min.css') }}
 {{ HTML::script('f/jquery/jquery-1.8.2.js') }}
+{{ HTML::script('f/jquery/jquery-ui-1.10.4.custom.min.js') }}
 <script type="text/javascript">
 $(function() {
 
 });
 </script>
+@yield('js')
 <body class="site" id="fp">
+<h1><a href="{{ URL::route('home') }}">Songs</a><a href="{{ URL::route('add') }}" class="add">+</a></h1>
 @yield('content')
 <div class="footer">
 {? $site = App::make('site') ?}

@@ -1,45 +1,22 @@
 html, body {height: 100%; padding: 0; margin: 0;}
-body {background-color: #FFF; color: #000; font: 150% arial; padding: 20px 50px; height: auto;}
+body {background-color: #FFF; color: #000; font: 120% arial; padding: 20px 50px; height: auto;}
 
-h1 {display: inline-block; background-color: #789; color: #FFF; padding: 5px 20px 5px 20px;}
-h2 {display: inline-block; background-color: #ABC; color: #FFF; padding: 3px 15px 3px 15px;}
-h3 {display: inline-block; background-color: #ABC; color: #FFF; padding: 3px 15px 3px 15px;}
-
-h1 a {color: #FFF;}
-h2 a {color: #FFF;}
-h3 a {color: #FFF;}
+h1 a, h1 span{background-color: #789; color: #FFF; padding: 5px 20px 5px 20px;}
+h1 a.add, h3 a.add {background-color: #678; text-decoration: none;}
+h2 a, h2 span {background-color: #9AB; color: #FFF; padding: 3px 15px 3px 15px;}
+h3 a, h3 span {background-color: #ABC; color: #FFF; padding: 3px 15px 3px 15px;}
 
 table {font-size: 100%; border-collapse: collapse;}
-p {margin: 0.5em 0 0.8em 0;}
+p {margin: 0.5em 0;}
 img {border: none;}
 a {color: #005aa8; text-decoration: underline;}
-input[type="text"] {width: 400px; font-size: 120%; color: #CCC;}
+input[type="text"] {width: 400px; font-size: 120%;}
 input[type="text"].short {width: 80px; margin-left: 20px;}
 input[type="submit"] {padding: 5px 20px; font-size: 120%;}
-textarea {width: 500px; color: #CCC;}
+textarea {width: 500px;}
 
-.errors {background: #e74a00; padding: 10px 10px 5px 10px; color: #FFF; font-weight: bold; margin-left: -10px; margin-bottom: 10px;}
-.errors p {margin: 0 0 5px 0;}
-.errors a {color: #FFF;}
-
-div.blue {float: left; font-size: 17px; padding-left: 20px;}
-div.blue div {width: 100px; height: 100px; margin: 10px; float: left; background: url(/i/blue.png) no-repeat; color: #FFF; text-align: center; line-height: 100px;}
-
-div.category-row {margin: 10px;}
-div.category-row div.category {width: 150px; height: 200px; float: left; font-size: 19px; text-align: left; padding-right: 20px; line-height: 120px;}
-div.category-row div.category span {padding: 2px 10px 2px 10px; background-color: #675; color: #FFF;}
-div.category-row div.card {width: 110px; margin-left: 10px; float: left; padding: 5px; font-size: 15px; text-align: center; background-color: #F7F9F7; border-top: 2px solid #EEE; border-left: 2px solid #EEE; border-right: 4px solid #DDD; border-bottom: 4px solid #DDD; border-radius: 10px;}
-div.mark {margin: 5px; width: 100px; height: 100px; color: #FFF; font-size: 17px; text-align: center; line-height: 100px;}
-div.card a {text-decoration: none;}
-div.empty {background: url(/i/empty.png) no-repeat; color: #000;}
-div.yellow {background: url(/i/yellow.png) no-repeat;}
-div.red {background: url(/i/red.png) no-repeat;}
-
-div.date {margin-top: 5px;}
-div.date span.empty {background-color: #D4D4D4; font-size: 13px; padding: 0 5px 0 5px; border-radius: 2px;}
-div.date span.yellow {background-color: #F0C80D; color: #FFF; font-size: 13px; padding: 0 5px 0 5px; border-radius: 2px;}
-
-p.archive {font-size: 32px; color: #35F;}
+.grey {color: #CCC;}
+.red {color: #D70;}
 
 div.footer {width: 50%; border-top: 2px solid #CCC; padding: 10px;}
 div.footer {font-size: 60%;}
