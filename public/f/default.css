@@ -10,10 +10,9 @@ table {font-size: 100%; border-collapse: collapse;}
 p {margin: 0.5em 0;}
 img {border: none;}
 a {color: #005aa8; text-decoration: underline;}
-input[type="text"] {width: 400px; font-size: 120%;}
-input[type="text"].short {width: 80px; margin-left: 20px;}
+input[type="text"] {width: 300px; font-size: 120%;}
 input[type="submit"] {padding: 5px 20px; font-size: 120%;}
-textarea {width: 500px;}
+textarea {width: 400px;}
 
 .grey {color: #CCC;}
 .red {color: #D70;}
