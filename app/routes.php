@@ -30,5 +30,3 @@ Route::get('/songs/{id}', array('as' => 'song', 'uses' => 'HomeController@getSon
 
 Route::get('/edit/{id}', array('as' => 'edit', 'uses' => 'HomeController@getEdit'));
 Route::post('/save/{id}', array('as' => 'save', 'uses' => 'HomeController@postSave'));
-
-Route::get('/fix', array('as' => 'fix', 'uses' => 'HomeController@getFix'));

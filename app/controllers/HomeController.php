@@ -14,13 +14,6 @@ class HomeController extends BaseController {
 		return Redirect::back();
 	}
 
-	public function getFix()
-	{
-		DB::statement("SELECT setval('songs_songs_id_seq', (SELECT MAX(id) FROM songs_songs)+1)");
-
-		return 'OK!';
-	}
-
 	public function getHint()
 	{
 		$scope = array();
