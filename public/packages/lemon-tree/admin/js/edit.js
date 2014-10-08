@@ -126,7 +126,7 @@ $(function() {
 
 		if (opened == 'open') {
 			$.post(
-				"{{ URL::route('admin.tree.open1') }}",
+				LT.treeOpen1Url,
 				{itemName: itemName, propertyName: propertyName, classId: node},
 				function(data) {
 					$('div.padding[node1="'+node+'"]').html(data).slideDown('fast', function() {
@@ -184,6 +184,7 @@ $(function() {
 				$.unblockUI();
 			}
 		});
+
 		event.preventDefault();
 	});
 
