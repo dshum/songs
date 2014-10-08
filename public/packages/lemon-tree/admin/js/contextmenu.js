@@ -15,21 +15,6 @@ $(function() {
 
 		var items = [
 			{
-				title: 'Редактировать',
-				onclick: function () {
-					document.location.href = editUrl;
-				}
-			},
-			{
-				title: 'Редактировать в новой вкладке',
-				onclick: function () {
-					document.location.href = editUrlAddTab;
-				}
-			},
-			{
-				separator: true
-			},
-			{
 				title: 'Открыть',
 				onclick: function () {
 					document.location.href = browseUrl;
@@ -45,6 +30,18 @@ $(function() {
 				separator: true
 			},
 			{
+				title: 'Редактировать',
+				onclick: function () {
+					document.location.href = editUrl;
+				}
+			},
+			{
+				title: 'Редактировать в новой вкладке',
+				onclick: function () {
+					document.location.href = editUrlAddTab;
+				}
+			},
+			{
 				title: 'Переместить',
 				onclick: function () {
 					var html =
@@ -55,6 +52,9 @@ $(function() {
 					var form = $(html);
 					form.submit();
 				}
+			},
+			{
+				separator: true
 			},
 			{
 				title: 'Удалить',
