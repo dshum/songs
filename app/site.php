@@ -37,13 +37,14 @@ $site->
 	)->
 
 	/*
-	 * Песня
+	 * Альбом
 	 */
 
 	addItem(
-		Item::create('Song')->
-		setTitle('Песня')->
+		Item::create('Album')->
+		setTitle('Альбом')->
 		setMainProperty('name')->
+		addOrderBy('year', 'asc')->
 		addOrderBy('name', 'asc')->
 		addProperty(
 			TextfieldProperty::create('name')->
@@ -52,8 +53,9 @@ $site->
 			setShow(true)
 		)->
 		addProperty(
-			TextareaProperty::create('text')->
-			setTitle('Текст')
+			IntegerProperty::create('year')->
+			setTitle('Год')->
+			setShow(true)
 		)->
 		addProperty(
 			OneToOneProperty::create('artist_id')->
@@ -77,10 +79,67 @@ $site->
 		)
 	)->
 
+	/*
+	 * Песня
+	 */
+
+	addItem(
+		Item::create('Song')->
+		setTitle('Песня')->
+		setMainProperty('name')->
+		addOrderBy('number', 'asc')->
+		addOrderBy('name', 'asc')->
+		addProperty(
+			TextfieldProperty::create('name')->
+			setTitle('Название')->
+			setRequired(true)->
+			setShow(true)
+		)->
+		addProperty(
+			TextareaProperty::create('text')->
+			setTitle('Текст')
+		)->
+		addProperty(
+			IntegerProperty::create('number')->
+			setTitle('Номер')->
+			setShow(true)
+		)->
+		addProperty(
+			OneToOneProperty::create('artist_id')->
+			setTitle('Исполнитель')->
+			setRelatedClass('Artist')->
+			setDeleting(OneToOneProperty::RESTRICT)->
+			setRequired(true)->
+			setShow(true)
+		)->
+		addProperty(
+			OneToOneProperty::create('album_id')->
+			setTitle('Альбом')->
+			setRelatedClass('Album')->
+			setDeleting(OneToOneProperty::RESTRICT)->
+			setParent(true)->
+			setShow(true)
+		)->
+		addProperty(
+			DatetimeProperty::create('created_at')->
+			setTitle('Дата создания')->
+			setReadonly(true)->
+			setShow(true)
+		)->
+		addProperty(
+			DatetimeProperty::create('updated_at')->
+			setTitle('Последнее изменение')->
+			setReadonly(true)->
+			setShow(true)
+		)
+	)->
+
 	bind(Site::ROOT, 'Artist')->
-	bind('Artist', 'Song')->
+	bind('Artist', 'Album', 'Song')->
+	bind('Album', 'Song')->
 
 	bindTree(Site::ROOT, 'Artist')->
-	bindTree('Artist', 'Song')->
+	bindTree('Artist', 'Album', 'Song')->
+	bindTree('Album', 'Song')->
 
 	end();

@@ -1,6 +1,8 @@
 <?php
 
-class Album extends LemonTree\Element {
+class Album extends Eloquent implements LemonTree\ElementInterface {
+
+	use LemonTree\ElementTrait;
 
 	public function getHref()
 	{

@@ -27,6 +27,7 @@
         "Illuminate\\View\\ViewServiceProvider",
         "Illuminate\\Workbench\\WorkbenchServiceProvider",
         "Cartalyst\\Sentry\\SentryServiceProvider",
+        "Barryvdh\\LaravelIdeHelper\\IdeHelperServiceProvider",
         "LemonTree\\Admin\\AdminServiceProvider"
     ],
     "eager": [
@@ -111,27 +112,70 @@
         "translator": "Illuminate\\Translation\\TranslationServiceProvider",
         "translation.loader": "Illuminate\\Translation\\TranslationServiceProvider",
         "validator": "Illuminate\\Validation\\ValidationServiceProvider",
-        "validation.presence": "Illuminate\\Validation\\ValidationServiceProvider"
+        "validation.presence": "Illuminate\\Validation\\ValidationServiceProvider",
+        "command.ide-helper.generate": "Barryvdh\\LaravelIdeHelper\\IdeHelperServiceProvider",
+        "command.ide-helper.models": "Barryvdh\\LaravelIdeHelper\\IdeHelperServiceProvider"
     },
     "when": {
-        "Illuminate\\Foundation\\Providers\\ArtisanServiceProvider": [],
-        "Illuminate\\Auth\\AuthServiceProvider": [],
-        "Illuminate\\Cache\\CacheServiceProvider": [],
-        "Illuminate\\Session\\CommandsServiceProvider": [],
-        "Illuminate\\Foundation\\Providers\\ConsoleSupportServiceProvider": [],
-        "Illuminate\\Routing\\ControllerServiceProvider": [],
-        "Illuminate\\Hashing\\HashServiceProvider": [],
-        "Illuminate\\Html\\HtmlServiceProvider": [],
-        "Illuminate\\Log\\LogServiceProvider": [],
-        "Illuminate\\Mail\\MailServiceProvider": [],
-        "Illuminate\\Database\\MigrationServiceProvider": [],
-        "Illuminate\\Pagination\\PaginationServiceProvider": [],
-        "Illuminate\\Queue\\QueueServiceProvider": [],
-        "Illuminate\\Redis\\RedisServiceProvider": [],
-        "Illuminate\\Remote\\RemoteServiceProvider": [],
-        "Illuminate\\Auth\\Reminders\\ReminderServiceProvider": [],
-        "Illuminate\\Database\\SeedServiceProvider": [],
-        "Illuminate\\Translation\\TranslationServiceProvider": [],
-        "Illuminate\\Validation\\ValidationServiceProvider": []
+        "Illuminate\\Foundation\\Providers\\ArtisanServiceProvider": [
+
+        ],
+        "Illuminate\\Auth\\AuthServiceProvider": [
+
+        ],
+        "Illuminate\\Cache\\CacheServiceProvider": [
+
+        ],
+        "Illuminate\\Session\\CommandsServiceProvider": [
+
+        ],
+        "Illuminate\\Foundation\\Providers\\ConsoleSupportServiceProvider": [
+
+        ],
+        "Illuminate\\Routing\\ControllerServiceProvider": [
+
+        ],
+        "Illuminate\\Hashing\\HashServiceProvider": [
+
+        ],
+        "Illuminate\\Html\\HtmlServiceProvider": [
+
+        ],
+        "Illuminate\\Log\\LogServiceProvider": [
+
+        ],
+        "Illuminate\\Mail\\MailServiceProvider": [
+
+        ],
+        "Illuminate\\Database\\MigrationServiceProvider": [
+
+        ],
+        "Illuminate\\Pagination\\PaginationServiceProvider": [
+
+        ],
+        "Illuminate\\Queue\\QueueServiceProvider": [
+
+        ],
+        "Illuminate\\Redis\\RedisServiceProvider": [
+
+        ],
+        "Illuminate\\Remote\\RemoteServiceProvider": [
+
+        ],
+        "Illuminate\\Auth\\Reminders\\ReminderServiceProvider": [
+
+        ],
+        "Illuminate\\Database\\SeedServiceProvider": [
+
+        ],
+        "Illuminate\\Translation\\TranslationServiceProvider": [
+
+        ],
+        "Illuminate\\Validation\\ValidationServiceProvider": [
+
+        ],
+        "Barryvdh\\LaravelIdeHelper\\IdeHelperServiceProvider": [
+
+        ]
     }
 }

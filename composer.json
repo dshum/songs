@@ -6,6 +6,7 @@
 	"require": {
 		"laravel/framework": "4.2.*",
 		"cartalyst/sentry": "2.1.*",
+		"barryvdh/laravel-ide-helper": "1.*",
 		"lemon-tree/admin": "dev-master"
 	},
 	"autoload": {

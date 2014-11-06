@@ -1,6 +1,8 @@
 <?php
 
-class Song extends LemonTree\Element {
+class Song extends Eloquent implements LemonTree\ElementInterface {
+
+	use LemonTree\ElementTrait;
 
 	public function getHref()
 	{
